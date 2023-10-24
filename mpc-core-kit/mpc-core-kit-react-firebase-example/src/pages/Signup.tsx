@@ -1,11 +1,13 @@
 import { useState} from "react";
 import { FirebaseService } from "../lib/firebase";
+import { useNavigate } from "react-router-dom";
 
 const firebaseSerive = new FirebaseService();
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -13,6 +15,7 @@ export default function SignUp() {
       email,
       password
     );
+    navigate('/')
   }
 
   return (
