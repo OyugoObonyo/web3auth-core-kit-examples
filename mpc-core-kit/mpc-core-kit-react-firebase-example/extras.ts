@@ -1,0 +1,2 @@
+const deviceFactorKey = "1260157a8e31f10983e0e3c509065326024a0a16ac731cd1328c2633503ccf1d"
+const backupFactorKey = "canoe tone base remember motor blossom cereal lesson unknown indicate cook apart umbrella indicate keen spawn proof panther onion mad section goat annual sniff"
