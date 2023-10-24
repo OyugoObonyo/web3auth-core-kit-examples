@@ -14,8 +14,10 @@ export default function SignUp() {
     await firebaseSerive.registerWithEmailAndPassword(
       email,
       password
-    );
-    navigate('/')
+    )
+    .then((user) => {
+      navigate("/")
+    })
   }
 
   return (

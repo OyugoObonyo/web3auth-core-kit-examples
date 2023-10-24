@@ -37,15 +37,7 @@ export class FirebaseService {
         email,
         password
       );
-      console.log(
-        "User credentials from Firebase Method at sign up: ",
-        userCredentials
-      );
       const user = userCredentials.user;
-      console.log(
-        "Extracted User uid from user credentials at sign up: ",
-        user.uid
-      );
       return user;
     } catch (error: any) {
       console.log(error);
@@ -60,15 +52,7 @@ export class FirebaseService {
         email,
         password
       );
-      console.log(
-        "User credentials from Firebase Method at sign in method: ",
-        userCredentials
-      );
       const user = userCredentials.user;
-      console.log(
-        "Extracted User uid from user credentials at sign in: ",
-        user.uid
-      );
       return user;
     } catch (error: any) {
       console.log(error);
